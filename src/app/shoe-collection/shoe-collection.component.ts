@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Shoe } from '../shoe';
 
 @Component({
   selector: 'app-shoe-collection',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoeCollectionComponent implements OnInit {
 
-  constructor() { }
+  shoeList: Shoe[];
+
+  constructor() { 
+    this.shoeList = [];
+  }
 
   ngOnInit() {
   }
